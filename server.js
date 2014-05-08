@@ -2,7 +2,6 @@
 
 // Module dependencies
 var restify = require('restify');
-var http = require('http');
 
 var Config = require('./config/index.js');
 var log = require('./utils/logger');
