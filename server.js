@@ -6,7 +6,6 @@ var http = require('http');
 
 var Config = require('./config/index.js');
 var log = require('./utils/logger');
-var middleware = require('./middleware');
 var routes = require('./routes');
 
 var config = new Config();
@@ -33,7 +32,7 @@ config.load().then(function () {
 
   // Forward remaining requests to index
   server.get(/.*/, restify.serveStatic({
-    directory: './public',
+    directory: cfg.dirs.static,
     default: 'index.html'
   }));
 
