@@ -12,7 +12,7 @@ var config = {};
 config.development = {
   db: {},
   dirs: {
-    static: path.resolve(__dirname, './public')
+    static: path.resolve(__dirname, '../client/app')
   },
   server: {
     // Host to be passed to node's `net.Server#listen()`
@@ -28,7 +28,7 @@ config.development = {
 config.production = {
   db: {},
   dirs: {
-    static: path.resolve(__dirname, './public')
+    static: path.resolve(__dirname, '../client/app')
   },
   server: {
     // Host to be passed to node's `net.Server#listen()`

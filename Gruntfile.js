@@ -20,7 +20,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'newer:jshint:all',
       'build',
-      'watch'
+      'concurrent:serve'
     ]);
   });
 
